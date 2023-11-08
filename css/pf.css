@@ -661,8 +661,12 @@ header.head_move {
   line-height: 1.8;
 }
 #worksarea .txt h2 {
-  margin: 1em 0 0;
+  margin: 1.5em 0 0.25em;
   font-size: 1.8em;
+  border-bottom: solid 1px #888;
+}
+#worksarea .txt p {
+  font-size: 1.3em;
 }
 #worksarea .txt p strong {
   display: inline-block;

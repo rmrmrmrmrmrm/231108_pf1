@@ -9,14 +9,14 @@
     <link rel="shortcut icon" href="../img/favicon.ico">
 
     <meta property="og:site_name" content="RISA MASUDA" />
-    <meta property="og:url" content="https://rmrmrmrmrmrm.github.io/230501_portfolio/" />
+    <meta property="og:url" content="https://next-todo-11-kkp4cmepy-rmrmrmrmrmrm.vercel.app/" />
     <meta property="og:title" content="RISA MASUDA" />
-    <meta property="og:description" content="ポートフォリオ" />
+    <meta property="og:description" content="TODOアプリ（チーム開発）" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="../img/og.png" />
     <meta property="og:locale" content="ja_JP" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:description" content="ポートフォリオ" />
+    <meta name="twitter:description" content="TODOアプリ（チーム開発）" />
     <meta name="twitter:image:src" content="../img/og.png" />
 
     <link href="../img/mv1.jpeg" rel="preload" as="image">
@@ -39,21 +39,33 @@
     <article id="worksarea">
 
         <div class="work_detail">
-            <h1>mac/winパス変換ツール</h1>
+            <h1>TODOアプリ（チーム開発）</h1>
             <div class="img">
                 <!-- スライダー -->
                 <div class="swiper-container slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <li>
-                                <p>お試しパスを記載</p>
-                                <img src="../img/work_toolpath.png" alt="">
+                                <p>一覧</p>
+                                <img src="../img/td1.png" alt="">
                             </li>
                         </div>
                         <div class="swiper-slide">
                             <li>
-                                <p>クリップボードへ自動でコピー</p>
-                                <img src="../img/work_toolpath2.png" alt="">
+                                <p>認証機能</p>
+                                <img src="../img/td0.png" alt="">
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li>
+                                <p>詳細ページ、コメント機能</p>
+                                <img src="../img/td2.png" alt="">
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li>
+                                <p>詳細ページ、コメント機能</p>
+                                <img src="../img/td3.png" alt="">
                             </li>
                         </div>
                     </div>
@@ -67,36 +79,40 @@
             <div class="txt">
                 <h2>制作背景</h2>
                 <p>
-                    macとwinで異なるパスの形式を相互に変換できるツールです。<br>
-                    元々オンラインツールでパスを変換できるものはあったのですが「macの文字コード「UTF-8-Mac(NFD)」によってwindowsでは濁点や半濁点が１文字に分かれてしまい正しいパスと認識されない」という使いづらさがあった為、それを解消しています。
+                    Gitを使ったチーム開発を経験する為、このTODOアプリ（チーム開発）の制作プロジェクトに参加しました。
                 </p>
-                <h2>社員さんからのフィードバックを受けて改善しました</h2>
+                <h2>デザイン</h2>
                 <p>
-                    slackでツールを共有したところフィードバックをいただけました。<br>
-                    ・mac用のものも作って欲しい<br>
-                    ・コピーを自動でできるようにしたい<br>
-                    ・社外からもアクセスできるようにしたい<br>
-                    中でも「コピーを自動でできるようにしたい」動作は、調べてみると意外と実装するのが簡単でフィードバックをいただけるありがたさや面白さを感じました。<br>
-                    また、普段やりとりのない方にも使って頂けているのを知った時は嬉しかったです。
+                    デザインは担当の方からfigmaのデータを共有していただきました
                 </p>
-                <h2>工夫した部分</h2>
+                <h2>使用技術</h2>
                 <p>
-                    右上にお試しができるパスを記載してすぐ試してもらえるような工夫をしました。<br>
-                    経緯としてはこのツールを作成する少し前にslackが導入されて、新しいツールに対する多少の抵抗感を感じた経験から、最初の１歩をかんたんにする必要性を実感した為です。
+                    <strong>git/guthub</strong><br>
+                    チーム人数：４名<br>
+                    ワークフロー：GitHub Flow<br>
+                    担当：認証機能、firebase初期設定、詳細ページ、コメント機能<br>
+                    <strong>chakra-ui</strong><br>
+                    デザインがchacra-uiをベースに考えられたものだった事と、チーム内でnextでよく使われているcssライブラリを使ってみたいという話になったので使用しました。<br>
+                    メルカリやyoutubeに採用されているらしいと聞いて興味深かったです。<br>
                 </p>
+                <h2>感想</h2>
+                <p>Gitの開発で相手がいないと経験できない部分ができたのが一番勉強になりました。<br>
+                    チーム同士でイシューを分けあったりレビューをしたりしながら作業を進める難しさがあります。</p>
             </div>
             <dl class="flex">
                 <dt>URL</dt>
-                <dd>社内共有サーバーに格納</dd>
+                <dd><a
+                        href="https://next-todo-11-kkp4cmepy-rmrmrmrmrmrm.vercel.app/">https://next-todo-11-kkp4cmepy-rmrmrmrmrmrm.vercel.app/</a>
+                </dd>
 
                 <dt>Release</dt>
-                <dd>2022/11頃</dd>
+                <dd>2023/10</dd>
 
                 <dt>Smartphone</dt>
                 <dd>レスポンシブ</dd>
 
                 <dt>technology</dt>
-                <dd>HTML/CSS/jQuery</dd>
+                <dd>next/Git(GitHubFlow)/chakra-ui/firebase/vercel</dd>
 
                 <!-- <dt>Direction</dt> -->
                 <!-- <dd>自分</dd> -->
