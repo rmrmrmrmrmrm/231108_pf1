@@ -21,9 +21,8 @@
 
     <link href="img/mv1.jpeg" rel="preload" as="image">
 
-    <link rel="stylesheet" type="text/css" href="css/style.min.css">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
@@ -45,8 +44,9 @@
             <li>ABOUT</li>
         </ul>
         <div class="contents">
-            <div class="content" id="skill">
+            <div class="content skill" id="skill">
                 <section>
+                    <h2 class="skill__ttl">使えるアプリや言語</h2>
                     <div id="sort">
                         <div class="sort_menu">
                             <ul class="flexC">
@@ -186,8 +186,9 @@
                     </div><!-- /#sort -->
                 </section>
             </div>
-            <div class="content" id="work">
+            <div class="content work" id="work">
                 <section>
+                    <h2 class="work__ttl">制作したもの</h2>
                     <p class="ico_info">
                         <span class="ico_work">●</span>：業務　
                         <span class="ico_tool">●</span>：ツール　
@@ -318,39 +319,48 @@
                     </ul>
                 </section>
             </div>
-            <div class="content" id="about">
+            <div class="content about" id="about">
                 <section>
+                    <h2 class="about__ttl">10秒でわかる略歴</h2>
                     <div class="box timeline">
                         <div class="period">
-                            <div class="period_no"><span class="year"><span class="no">6</span>年</span></div>
-                            <div class="period_year">2017〜2023</div>
-                            <h2>コーダー</h2>
-                            <p>
-                                コーダー専業として月30ページのLP制作をメインに、カート系ASPのカスタマイズ制作や、WP新規構築、更新修正等を対応しました。<br>
-                                更新性や保守性に配慮し、デザインを忠実に再現できるよう心がけました。
+                            <div class="period__no"><span class="year">2025<br>：<br>2017</span></div>
+                            <div class="period__year"><span class="no">2</span>年</div>
+                            <h3 class="period__ttl">マークアップエンジニア</h3>
+                            <p class="period__detail">大手企業サイト運用（広告代理店経由）
+                            <br>┗SASS/Gitを用いたチームでの運用・保守
+                            </p>
+                            <div class="period__year"><span class="no">6</span>年</div>
+                            <h3 class="period__ttl">コーダー</h3>
+                            <p class="period__detail">中小企業EC運用/サイト制作（HTML/CSS/JavaScript）
+                            <br>┣小~中ボリュームのLP30本/月
+                            <br>┣カート系ASPカスタマイズ
+                            <br>┗WordPress新規サイト制作・運用
                             </p>
                         </div>
                         <div class="period">
-                            <div class="period_no"><span class="year"><span class="no">2</span>年</span></div>
-                            <div class="period_year">2015〜2017</div>
-                            <h2>webデザイナー</h2>
-                            <p>
-                                自社CMSの販売〜運用サポートをする事業部のwebデザイナーとして在籍。<br>
-                                ディレクション、デザイナー、運用サポートにトータルに関わりました。
+                            <div class="period__no"><span class="year">2017<br>：<br>2015</span></div>
+                            <div class="period__year"><span class="no">2</span>年</div>
+                            <h3 class="period__ttl">webデザイナー</h3>
+                            <p class="period__detail">自社CMSの販売/運用サポート事業部
+                            <br>┣webデザイン・webディレクション・コーディング
+                            <br>┣印刷物制作
+                            <br>┗カスタマーサポート
                             </p>
                         </div>
-                        <div class="period" id="school">
-                            <div class="period_no"><span class="year"><span class="no">4</span>年</span></div>
-                            <div class="period_year">〜2014年3月</div>
-                            <h2>京都造形芸術大学 卒業</h2>
-                            <p>
+                        <div class="period period--school">
+                            <div class="period__no"><span class="year">2014<br>：<br>2010</span></div>
+                            <div class="period__year"><span class="no">4</span>年</div>
+                            <h3 class="period__ttl">京都造形芸術大学 日本画 卒業</h3>
+                            <p class="period__detail">
                             </p>
                         </div>
                     </div>
                     <h1>Profile</h1>
                     <div class="box profile">
                         出身：静岡県<br>
-                        好きなもの：犬、海、絵、日帰り登山<br>
+                        好きなもの：山歩き、読書、競馬、ライブ、絵画、海<br>
+                        犬派
                     </div>
                 </section>
             </div>

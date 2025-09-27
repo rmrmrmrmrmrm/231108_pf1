@@ -194,7 +194,12 @@ footer {
     }
   }
 
-  #skill {
+  #skill,
+  .skill {
+    &__ttl {
+            font-size: 1.8em;
+            padding: 0 0 2em;
+    }
     #sort {
       .sort_menu {
         ul {
@@ -297,7 +302,13 @@ footer {
     }
   }
 
-  #work {
+  #work,
+  .work {
+    &__ttl {
+            font-size: 1.8em;
+            padding: 0 0 2em;
+    }
+
     .ico_info {
       margin: 0 0 2em;
       text-align: left;
@@ -387,15 +398,22 @@ footer {
     }
   }
 
-  #about {
+  .about {
     h1 {
       font-size: 2em;
+    }
+    &__ttl {
+            font-size: 1.8em;
+            padding: 0 0 2em;
     }
 
     .box {
       width: min(100%, 700px);
-      margin: 2em auto 4em;
+      margin: 0 auto 4em;
       position: relative;
+      &+.box {
+        margin-top: 2em;
+      }
     }
 
     .timeline {
@@ -446,7 +464,7 @@ footer {
           }
         }
 
-        .period_no {
+        &__no {
           position: absolute;
           top: 0;
           bottom: 0;
@@ -472,36 +490,41 @@ footer {
           .year {
             padding: 20% 0 0;
             display: block;
+            line-height: 1.0em;
             .no {
               font-size: 2em;
             }
           }
         }
 
-        .period_year {
+        &__year {
           display: block;
           color: var(--c-deep);
           font-weight: bold;
         }
 
-        h2 {
+        &__ttl {
           font-size: 1.8em;
-          padding: 0 0 0.5em;
+          padding: 0 0 0.1em;
         }
 
-        p {
+        &__detail {
           font-size: 1.2em;
+          &+.period__year {
+            margin-top: 1.5em;
+          }
         }
-      }
-      #school {
-        &:before {
-          background-color: #6370b5;
-        }
-        .period_no {
-          background-color: #6370b5;
-        }
-        .period_year {
-          color: #6370b5;
+
+        &--school {
+          &:before {
+            background-color: #6370b5;
+          }
+          .period__no {
+            background-color: #6370b5;
+          }
+          .period__year {
+            color: #6370b5;
+          }
         }
       }
     }
