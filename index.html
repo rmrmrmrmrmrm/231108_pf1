@@ -48,138 +48,51 @@
                 <section>
                     <h2 class="c-section-ttl">使えるアプリや言語</h2>
                     <div id="sort">
-                        <div class="sort_menu">
-                            <ul class="flexC">
-                                <li class="hov sort_item" data-name="la"><span>言語/ライブラリ</span></li>
-                                <li class="hov sort_item" data-name="fl"><span>フレームワーク他</span></li>
-                                <li class="hov sort_item" data-name="de"><span>デザイン</span></li>
-                                <li class="hov sort_item" data-name="cm"><span>CMS・ASP</span></li>
-                                <li class="hov sort_item" data-name="pl"><span>進行管理</span></li>
-                                <li class="hov sort_item reset" data-name="reset"><span>RESET</span></li>
-                            </ul>
-                        </div><!-- /.sort_menu -->
                         <table class="sort_table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>熟知
+                                        <!--自信を持って説明・構築できる-->
+                                    </th>
+                                    <th>実務経験あり
+                                        <!--実務で使用経験あり（期間や深さは補足で説明できる）-->
+                                    </th>
+                                    <th>学習
+                                        <!--個人開発・学習中など含む-->
+                                    </th>
+                                </tr>
+                            </thead>
                             <tbody>
                                 <tr>
-                                    <th>実務経験があり<br>特に熟知している<br><span class="star">★★★★★</span></th>
-                                    <td>
-                                        <ul class="flex">
-                                            <li class="sort_child" data-item="la"><img src="img/skill/html5.svg" alt="HTML5">
-                                                <p>HTML5</p>
-                                            </li>
-                                            <li class="sort_child" data-item="la"><img src="img/skill/css3.svg" alt="CSS3">
-                                                <p>CSS3</p>
-                                            </li>
-                                            <li class="sort_child" data-item="la"><img src="img/skill/jquery.svg"
-                                                    alt="jQuery">
-                                                <p>jQuery</p>
-                                            </li>
-                                            <li class="sort_child" data-item="de"><img src="img/skill/photoshop.svg"
-                                                    alt="photoshop">
-                                                <p>photoshop</p>
-                                            </li>
-                                            <li class="sort_child" data-item="pl"><img src="img/skill/backlog.png"
-                                                    alt="Backlog">
-                                                <p>Backlog</p>
-                                            </li>
-                                        </ul><!-- /.flex -->
-                                    </td>
+                                    <th>フロントエンド他</th>
+                                    <td>・HTML5<br>・CSS3</td>
+                                    <td>・jQuery<br>・SCSS</td>
+                                    <td>・React（Vite,Typescript）<br>・Tailwind CSS<br>・python<br>・Vue.js<br>・php</td>
                                 </tr>
                                 <tr>
-                                    <th>実務経験がある<br><span class="star">★★★★☆</span></th>
-                                    <td>
-                                        <ul class="flex">
-                                            <li class="sort_child" data-item="la"><img src="img/skill/javascript.svg"
-                                                    alt="javascript">
-                                                <p>Vanilla.js</p>
-                                            </li>
-                                            <li class="sort_child wide" data-item="cm"><img src="img/skill/cart.svg"
-                                                    alt="cart">
-                                                <p>MakeShop/COLORME<br>b-cart/shopify</p>
-                                            </li>
-                                        </ul><!-- /.flex -->
-                                    </td>
+                                    <th>CMS</th>
+                                    <td></td>
+                                    <td>・WP<br>・MakeShop<br>・COLORME<br>・b-cart<br>・shopify</td>
+                                    <td></td>
                                 </tr>
                                 <tr>
-                                    <th>実務経験はあるが<br>使用期間が短い<br><span class="star">★★★☆☆</span></th>
-                                    <td>
-                                        <ul class="flex">
-                                            <li class="sort_child" data-item="cm"><img src="img/skill/wp.svg" alt="WP">
-                                                <p>WP</p>
-                                            </li>
-                                            <li class="sort_child" data-item="de"><img src="img/skill/xd.svg" alt="XD">
-                                                <p>XD</p>
-                                            </li>
-                                            <li class="sort_child" data-item="pl"><img src="img/skill/subversion.svg"
-                                                    alt="subversion">
-                                                <p>subversion</p>
-                                            </li>
-                                        </ul><!-- /.flex -->
-                                    </td>
+                                    <th>バージョン管理</th>
+                                    <td></td>
+                                    <td>・Git（Sourcetree）<br>・TortoiseSVN</td>
+                                    <td>・GitHub</td>
                                 </tr>
                                 <tr>
-                                    <th>個人開発の経験がある<br><span class="star">★★☆☆☆</span></th>
-                                    <td>
-                                        <ul class="flex">
-                                            <li class="sort_child" data-item="la"><img src="img/skill/php.svg" alt="php">
-                                                <p>php</p>
-                                            </li>
-                                            <li class="sort_child" data-item="la"><img src="img/skill/python.svg"
-                                                    alt="python">
-                                                <p>python</p>
-                                            </li>
-                                        </ul><!-- /.flex -->
-                                    </td>
+                                    <th>ホスティング</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td>・Vercel<br>・Next</td>
                                 </tr>
                                 <tr>
-                                    <th>基本的な学習をした<br><span class="star">★☆☆☆☆</span></th>
-                                    <td>
-                                        <ul class="flex">
-                                            <li class="sort_child" data-item="fl"><img src="img/skill/react.svg" alt="React">
-                                                <p>React</p>
-                                            </li>
-                                            <li class="sort_child" data-item="pl"><img src="img/skill/git.svg" alt="Git">
-                                                <p>Git</p>
-                                            </li>
-                                            <li class="sort_child" data-item="de"><img src="img/skill/figma.svg" alt="figma">
-                                                <p>figma</p>
-                                            </li>
-                                        </ul><!-- /.flex -->
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>学習予定<br><span class="star">☆☆☆☆☆</span></th>
-                                    <td>
-                                        <ul class="flex">
-                                            <li class="sort_child" data-item="fl"><img src="img/skill/vue.svg" alt="Vue.js">
-                                                <p>Vue.js</p>
-                                            </li>
-                                            <li class="sort_child" data-item="fl"><img src="img/skill/laravel.svg"
-                                                    alt="laravel">
-                                                <p>laravel</p>
-                                            </li>
-                                            <li class="sort_child" data-item="la"><img src="img/skill/typescript.svg"
-                                                    alt="Typescript">
-                                                <p>Typescript</p>
-                                            </li>
-                                            <li class="sort_child" data-item="fl"><img src="img/skill/docker.svg"
-                                                    alt="docker">
-                                                <p>docker</p>
-                                            </li>
-                                            <li class="sort_child wide" data-item="fl"><img src="img/skill/rails.svg"
-                                                    alt="rails">
-                                                <p>Ruby on rails</p>
-                                            </li>
-                                            <!--
-                                            <li class="sort_child" data-item="la"><img src="img/skill/java.svg" alt="java">
-                                                <p>java</p>
-                                            </li>
-                                            <li class="sort_child" data-item="la"><img src="img/skill/threejs.svg" alt="threejs">
-                                                <p>threejs</p>
-                                            </li>
-                                        -->
-                                        </ul><!-- /.flex -->
-                                    </td>
+                                    <th>デザインツール</th>
+                                    <td>・Photoshop</td>
+                                    <td>・Figma<br>・Illustrator<br>・XD</td>
+                                    <td></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -411,7 +324,7 @@
                                             </dd>
                                             <dt>概要</dt>
                                             <dd>
-                                                2017〜2024までのメイン担当案件です。 小~中ボリュームのLP30本/月作成しました。
+                                                2017〜2024までのメイン担当案件です。<br>小~中ボリュームのLP30本/月作成しました。
                                             </dd>
                                             <dt>技術スタック</dt>
                                             <dd>
@@ -454,7 +367,7 @@
             </div><!-- /work-->
             <div class="content about" id="about">
                 <section>
-                    <h2 class="c-section-ttl">10秒でわかる略歴</h2>
+                    <h2 class="c-section-ttl">10秒でわかる経歴</h2>
                     <div class="box timeline">
                         <div class="period period--school">
                             <div class="period__no"><span class="year">2010<br>〜<br>2014</span></div>
@@ -597,27 +510,27 @@
         sessionStorage.setItem('selectedTab', num + 1);
     }).first();
     // }).first().click();
-    $('.sort_item').click(function () {
-        //reset
-        $('.sort_child').show();
-        $('.active').removeClass('active');
-        //btn
-        $(this).addClass('active');
-        const name = $(this).data('name');
-        //console.log(name)
-        $('.sort_child').each(function () {
-            let item = $(this).data('item');
-            //console.log(item)
-            if (name == 'reset') {
-                $('.sort_child').show();
-                $('.active').removeClass('active');
-            } else {
-                if (name != item) {
-                    $(this).hide();
-                }
-            }
-        });
-    });
+    //$('.sort_item').click(function () {
+    //    //reset
+    //    $('.sort_child').show();
+    //    $('.active').removeClass('active');
+    //    //btn
+    //    $(this).addClass('active');
+    //    const name = $(this).data('name');
+    //    //console.log(name)
+    //    $('.sort_child').each(function () {
+    //        let item = $(this).data('item');
+    //        //console.log(item)
+    //        if (name == 'reset') {
+    //            $('.sort_child').show();
+    //            $('.active').removeClass('active');
+    //        } else {
+    //            if (name != item) {
+    //                $(this).hide();
+    //            }
+    //        }
+    //    });
+    //});
 
     
 //WORK
