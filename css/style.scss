@@ -177,7 +177,7 @@ footer {
     text-align: center;
     box-sizing: border-box;
     font-size: 1.6em;
-    width: min(24%, 120px);
+    width: min(29%, 120px);
     position: relative;
     font-weight: 700;
     letter-spacing: 0.2em;
@@ -354,19 +354,29 @@ footer {
     }
     &__detail {
       width: 70%;
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
     }
     &__menu {
       width:  25%;
+      @media screen and (max-width: 800px) {
+        width: 100%;
+      }
     }
   }
   .work-category {
-    text-align: left;
+      text-align:  center;
+    &__ttl {
+      margin-bottom: 0.2em;
+    }
     &__item {
       display: inline-block;
       border: 1px solid #eee;
       border-radius: 1em;
       overflow: hidden;
-      padding: 0.2em 1em;
+      padding: 0.2em 0.7em;
+      margin-bottom: 0.2em;
       transition-duration: 0.4s;
       &:hover {
         cursor: pointer;
@@ -391,7 +401,8 @@ footer {
       }
     }
     &__tll{
-      font-size: 1.8em;
+      text-align: center;
+      font-size: 1.6em;
       padding: 0 0 0.5em;
     }
     &__ico {
@@ -405,6 +416,7 @@ footer {
       overflow: hidden;
       border-radius: var(--radius);
       border: solid 1px #ccc;
+      text-align: center;
       img {
         width: auto;
         height: 100%;
@@ -415,13 +427,22 @@ footer {
       dl {
         dt,dd {
           padding: 1em 0;
-          line-height: 1em;
+          line-height: 1.5em;
         }
         dt {
           width: 15%;
+          @media screen and (max-width: 800px) {
+            width: 100%;
+            padding-bottom: 0.3em;
+            font-weight: bold;
+            border-bottom: solid 1px #ddd;
+          }
         }
         dd {
           width: 80%;
+          @media screen and (max-width: 800px) {
+            width:  100%;
+          }
           b {
             display: block;
             margin-top: 1em;
@@ -440,12 +461,15 @@ footer {
     flex-wrap: wrap;
     gap:  5px;
     margin-top: 1em;
-    max-height: 800px;
+    max-height: 500px;
     overflow-y: scroll;
     &__item {
       //width: calc(33.333% - 2.5px);
-      width: calc(50% - 3px);
-      //width: 100%;
+      //width: calc(50% - 3px);
+      width: 100%;
+      @media screen and (max-width: 800px) {
+        width: calc(32.333% - 2.5px);
+      }
       &:hover {
         cursor: pointer;
         .work-items__img {
@@ -458,18 +482,28 @@ footer {
       border-radius: 8px;
       background: #000;
       overflow: hidden;
-      aspect-ratio: 1 / 1;
+      //aspect-ratio: 1 / 1;
+      aspect-ratio:  3 / 1;
       position: relative;
+      @media screen and (max-width: 800px) {
+        aspect-ratio: 1 / 1;
+      }
     }
     &__img {
       transition-duration: 0.4s;
-      opacity: 0.9;
-      height: 100%;
-      width: auto;
+      //opacity: 0.9;
+      opacity: 0.7;
+      //height: 100%;
+      //width: auto;
+      width: 100%;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      @media screen and (max-width: 800px) {
+        height: 100%;
+        width: auto;
+      }
     }
     &__txt {
       //font-size: 0.9em;
@@ -477,6 +511,35 @@ footer {
       text-align: left;
     }
   }
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    &.is-active {
+        display: flex;
+    }
+    &__content {
+        background: #fff;
+        width: 90%;
+        max-height: 90%;
+        overflow-y: auto;
+        border-radius: 8px;
+        padding: 16px;
+        position: relative;
+    }
+    &__close {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+    }
+}
 
 /*------------------------------------
 ------------------------------------*/
