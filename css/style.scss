@@ -409,10 +409,10 @@ footer {
 
     .box {
       width: min(100%, 700px);
-      margin: 0 auto 4em;
+      margin: 0 auto;
       position: relative;
       &+.box {
-        margin-top: 2em;
+        margin-top: 4em;
       }
     }
 
@@ -477,6 +477,9 @@ footer {
           border-radius: 100px;
           color: #fff;
           text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
           @media screen and (max-width: 800px) {
             width: 9em;
             height: 9em;
@@ -488,7 +491,7 @@ footer {
           }
 
           .year {
-            padding: 20% 0 0;
+            //padding: 20% 0 0;
             display: block;
             line-height: 1.0em;
             .no {
@@ -530,8 +533,10 @@ footer {
     }
 
     .profile {
+      p {
       line-height: 2;
       font-size: 1.3em;
+      }
     }
   }
 }
