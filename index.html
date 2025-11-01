@@ -47,56 +47,103 @@
             <div class="content skill" id="skill">
                 <section>
                     <h2 class="c-section-ttl">使えるアプリや言語</h2>
-                    <div id="sort">
-                        <table class="sort_table">
-                            <thead>
-                                <tr>
-                                    <th></th>
-                                    <th>熟知
-                                        <!--自信を持って説明・構築できる-->
-                                    </th>
-                                    <th>実務経験あり
-                                        <!--実務で使用経験あり（期間や深さは補足で説明できる）-->
-                                    </th>
-                                    <th>学習
-                                        <!--個人開発・学習中など含む-->
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th>フロントエンド他</th>
-                                    <td>・HTML5<br>・CSS3</td>
-                                    <td>・jQuery<br>・SCSS</td>
-                                    <td>・React（Vite,Typescript）<br>・Tailwind CSS<br>・python<br>・Vue.js<br>・php</td>
-                                </tr>
-                                <tr>
-                                    <th>CMS</th>
-                                    <td></td>
-                                    <td>・WP<br>・MakeShop<br>・COLORME<br>・b-cart<br>・shopify</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th>バージョン管理</th>
-                                    <td></td>
-                                    <td>・Git（Sourcetree）<br>・TortoiseSVN</td>
-                                    <td>・GitHub</td>
-                                </tr>
-                                <tr>
-                                    <th>ホスティング</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td>・Vercel<br>・Next</td>
-                                </tr>
-                                <tr>
-                                    <th>デザインツール</th>
-                                    <td>・Photoshop</td>
-                                    <td>・Figma<br>・Illustrator<br>・XD</td>
-                                    <td></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div><!-- /#sort -->
+                    <div class="content__wrap">
+                        <div class="content__box -wide">
+                            <h3 class="content__box-ttl">デザインコーディング</h3>
+                            <ul class="content__box-list">
+                                <li class="content__box-item">
+                                    <div class="content__box-head">
+                                        <h4>HTML・CSS<br>javascript</h4>
+                                        <p>★★★★★</p>
+                                    </div><!-- /.content__head -->
+                                    <p class="content__box-detail">
+                                        <strong>実務経験：８年</strong><br>
+                                        様々な運用コーディングを経験した為、基本的な部分は理解できています。<br>
+                                        レガシー環境からdockerやvpnを使った自動コンパイルが走る環境までひと通り対応可能です。<br>
+                                        レスポンシブ対応・Retina対応・webp対応などプラスアルファの対応も。<br>
+                                        javascriptについて<br>
+                                        <span class="c-indent">├○ 補助系パーツの実装がメイン（スライダー、タブ、アコーディオン、スクロールスパイなど）</span>
+                                        <span class="c-indent">└× GSAPやインタラクティブ系のアニメーション</span>
+                                    </p>
+                                </li>
+                                <li class="content__box-item">
+                                    <div class="content__box-head">
+                                        <h4>SCSS</h4>
+                                        <p>★★★☆☆</p>
+                                    </div><!-- /.content__head -->
+                                    <p class="content__box-detail">
+                                        <strong>実務経験：２年</strong><br>
+                                        パーシャルファイルの利用、既存ルールがない場合はBEM/SMACSSを使った命名を基本にしています。
+                                    </p>
+                                </li>
+                                <li class="content__box-item">
+                                    <div class="content__box-head">
+                                        <h4>Git</h4>
+                                        <p>★★★☆☆</p>
+                                    </div><!-- /.content__head -->
+                                    <p class="content__box-detail">
+                                        <strong>実務経験：２年</strong><br>
+                                        <span class="c-indent">├環境：Backlog／SourceTree</span>
+                                        <span class="c-indent">└ワークフロー：GitHub Flow の簡易版（タスクごとにmasterからブランチを切り、公開したらにmasterにマージする）</span>
+                                        競合解消、公開日に合わせたブランチの状態管理、同時作業しているメンバーとのやりとり。<br>
+                                        修正指示などはGoogleChatでのやりとりでした。<br>
+                                        <br>
+                                        <strong>（学習１回）</strong><br>
+                                        <span class="c-indent">├環境：Github</span>
+                                        <span class="c-indent">└ワークフロー：GitHub Flow</span>
+                                        Reactの学習コミュニティで体験しました。GitHub Flowでプルリクのやりとりを行いました。<br>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div><!-- /.content__box -->
+                        <div class="content__box">
+                            <h3 class="content__box-ttl">フロントエンド</h3>
+                            <ul class="content__box-list">
+                                <li class="content__box-item">
+                                    <div class="content__box-head">
+                                        <h4>React</h4>
+                                        <p class="-blue">★★☆☆☆</p>
+                                    </div><!-- /.content__head -->
+                                    <p class="content__box-detail">
+                                        <strong>学習のみ</strong><br>
+                                        CRUD機能の実装練習<br>
+                                        <span class="c-indent">├<a href="https://my-travel-9h3agcey3-rmrmrmrmrmrms-projects.vercel.app/" target="_blank">旅行メモ</a></span>
+                                        <span class="c-indent">├<a href="https://my-budget-app-ten.vercel.app/" target="_blank">家計簿</a></span>
+                                        <span class="c-indent">└<a href="https://230930-todo-nmya1gnf4-rmrmrmrmrmrm.vercel.app/" target="_blank">TODO</a>(Firebaseによる認証/ストレージあり)</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div><!-- /.content__box -->
+                        <div class="content__box">
+                            <h3 class="content__box-ttl">その他</h3>
+                            <ul class="content__box-list">
+                                <li class="content__box-item">
+                                    <div class="content__box-head">
+                                        <h4>CMS</h4>
+                                    </div><!-- /.content__head -->
+                                    <p class="content__box-detail">
+                                        <strong>WP</strong><br>
+                                        実務経験3~4回程度(スポット)。新規サイト構築。運用更新。<br>
+                                        <br>
+                                        <strong>MovableType</strong><br>
+                                        実務経験２年。基本的な運用更新。仕様の把握。
+                                    </p>
+                                </li>
+                                <li class="content__box-item">
+                                    <div class="content__box-head">
+                                        <h4>デザイン</h4>
+                                    </div><!-- /.content__head -->
+                                    <p class="content__box-detail">
+                                        <strong>figma</strong><br>
+                                        副業のサイトデザインで使用（XDも操作が似ているのでパーツ制作くらいは可能）<br>
+                                        <br>
+                                        <strong>Photoshop</strong><br>
+                                        デザインコーディングで日常利用。基本的な操作とかんたんな修正やパーツ制作は可能。<br>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div><!-- /.content__box -->
+                    </div><!-- /.content__wrap -->
                 </section>
             </div>
             <div class="content work-list" id="work">
@@ -112,11 +159,13 @@
                                         <dl class="flex">
                                             <dt>URL</dt>
                                             <dd>
-                                                <a href="https://my-travel-9h3agcey3-rmrmrmrmrmrms-projects.vercel.app/" target="_blank">https://my-travel-app-ten.vercel.app/</a>
+                                                <a href="https://my-travel-9h3agcey3-rmrmrmrmrmrms-projects.vercel.app/" target="_blank">https://my-travel-9h3agcey3-rmrmrmrmrmrms-projects.vercel.app/</a>
                                             </dd>
                                             <dt>概要</dt>
                                             <dd>
-                                                Reactの学習用アプリです。CRUD（Create、Read、Update、Delete）機能の実装練習。
+                                                Reactの学習用アプリです。<br>
+                                                CRUD（Create、Read、Update、Delete）機能の実装練習。<br>
+                                                「旅行アプリ」としていますが現状はメモ機能のみです。地図APIとの連携予定。
                                             </dd>
                                             <dt>技術スタック</dt>
                                             <dd>
@@ -132,7 +181,18 @@
                                             </dd>
                                             <dt>感想</dt>
                                             <dd>
-                                                <b>ユーザーができること（最低限）</b><br>収行き先リスト登録<br>メモ<br>画像アップロード<br><b>タスク</b><br>ルーティング設計<br>└React Routerで一覧&登録 / 詳細<br>画面・コンポーネント設計<br>├行き先一覧ページ (DestinationList)<br>├行き先カード (DestinationCard)<br>├行き先詳細ページ (DestinationDetail)<br>└行き先登録フォーム (DestinationForm)
+                                                <b>ユーザーができること（最低限）</b>
+                                                収行き先リスト登録<br>
+                                                メモ<br>
+                                                画像アップロード<br>
+                                                <b>タスク</b>
+                                                ルーティング設計<br>
+                                                └React Routerで一覧&登録 / 詳細<br>
+                                                <b>画面・コンポーネント設計</b>
+                                                ├行き先一覧ページ (DestinationList)<br>
+                                                ├行き先カード (DestinationCard)<br>
+                                                ├行き先詳細ページ (DestinationDetail)<br>
+                                                └行き先登録フォーム (DestinationForm)
                                             </dd>
                                         </dl>
                                     </div><!-- /.work-detail__txt -->
@@ -148,7 +208,8 @@
                                             </dd>
                                             <dt>概要</dt>
                                             <dd>
-                                                Reactの学習用アプリです。CRUD（Create、Read、Update、Delete）機能の実装練習。
+                                                Reactの学習用アプリです。<br>
+                                                CRUD（Create、Read、Update、Delete）機能の実装練習。
                                             </dd>
                                             <dt>技術スタック</dt>
                                             <dd>
@@ -164,7 +225,30 @@
                                             </dd>
                                             <dt>感想</dt>
                                             <dd>
-                                                <b>ユーザーができること（最低限）</b><br>収入・支出の登録<br>カテゴリ選択<br>日付選択<br>合計表示（月ごと）<br><b>タスク</b><br>状態管理（useState）<br>追加フォーム<br>リスト表示<br>月単位合計表示<br>データ永続化<br>デプロイ<br><b>実装順序</b><br>Step1：土台<br>Tailwindでシンプルなレイアウト<br>Header（アプリ名）<br>Step2：フォームとリスト<br>AddTransactionForm.jsxで入力<br>TransactionList.jsxで表示<br>Step3：月別フィルタリング<br>日付でフィルタ<br>MonthlySummary.jsxで合計表示<br>Step4：localStorage<br>useEffectで読み込み・保存
+                                                <b>ユーザーができること（最低限）</b>
+                                                収入・支出の登録<br>
+                                                カテゴリ選択<br>
+                                                日付選択<br>
+                                                合計表示（月ごと）<br>
+                                                <b>タスク</b>
+                                                状態管理（useState）<br>
+                                                追加フォーム<br>
+                                                リスト表示<br>
+                                                月単位合計表示<br>
+                                                データ永続化<br>
+                                                デプロイ<br>
+                                                <b>実装順序</b>
+                                                Step1：土台<br>
+                                                Tailwindでシンプルなレイアウト<br>
+                                                Header（アプリ名）<br>
+                                                Step2：フォームとリスト<br>
+                                                AddTransactionForm.jsxで入力<br>
+                                                TransactionList.jsxで表示<br>
+                                                Step3：月別フィルタリング<br>
+                                                日付でフィルタ<br>
+                                                MonthlySummary.jsxで合計表示<br>
+                                                Step4：localStorage<br>
+                                                useEffectで読み込み・保存
                                             </dd>
                                         </dl>
                                     </div><!-- /.work-detail__txt -->
@@ -176,11 +260,13 @@
                                         <dl class="flex">
                                             <dt>URL</dt>
                                             <dd>
-                                                <a href="https://bisen-beauty.com/" target="_blank">https://bisen-beauty.com/</a><br><a href="https://weave-hairsalon.com/" target="_blank">https://weave-hairsalon.com/</a>
+                                                <!--<a href="https://bisen-beauty.com/" target="_blank">https://bisen-beauty.com/</a><br>-->
+                                                <a href="https://weave-hairsalon.com/" target="_blank">https://weave-hairsalon.com/</a>
                                             </dd>
                                             <dt>概要</dt>
                                             <dd>
-                                                新規WPサイトのデザインからコーディングまでを担当しました。<br>公開後クライアントが操作できるよう全てブロックエディタで作成しています。
+                                                新規WPサイトのデザインからコーディングまでを担当しました。<br>
+                                                公開後クライアント側で操作できるよう全てブロックエディタで作成しています。
                                             </dd>
                                             <dt>技術スタック</dt>
                                             <dd>
@@ -193,7 +279,7 @@
                                             </dd>
                                             <dt>感想</dt>
                                             <dd>
-                                                <!--テキストテキストテキストテキストテキスト-->
+                                                報酬未払い😭
                                             </dd>
                                         </dl>
                                     </div><!-- /.work-detail__txt -->
@@ -221,7 +307,7 @@
                                             </dd>
                                             <dt>感想</dt>
                                             <dd>
-                                                <!--テキストテキストテキストテキストテキスト-->
+                                                スキル紹介用に作成。初期リリースから改修を重ねています。
                                             </dd>
                                         </dl>
                                     </div><!-- /.work-detail__txt -->
@@ -252,7 +338,8 @@
                                             </dd>
                                             <dt>感想</dt>
                                             <dd>
-                                                <!--テキストテキストテキストテキストテキスト-->
+                                                オンライン学習コミュニティの教材です。<br>
+                                                認証機能やデータベースを実際に動かせたのが新鮮でした。
                                             </dd>
                                         </dl>
                                     </div><!-- /.work-detail__txt -->
@@ -275,7 +362,7 @@
                                                 【フロントエンド】Next.js 13（App Router） / React / TypeScript / Chakra UI  
                                                 <br>【状態管理】React Hooks（useState）  
                                                 <br>【データ管理 / 認証】Firebase  
-                                                <br>【バージョン管理】Git(GitHubFlow)) / GitHub
+                                                <br>【バージョン管理】Git(GitHubFlow) / GitHub
                                                 <br>【ホスティング】Vercel
                                             </dd>
                                             <dt>リリース</dt>
@@ -284,7 +371,20 @@
                                             </dd>
                                             <dt>感想</dt>
                                             <dd>
-                                                <!--テキストテキストテキストテキストテキスト-->
+                                                オンライン学習コミュニティの有志チーム開発。<br>
+                                                <b>メンバー</b>
+                                                ・自分<br>
+                                                ・プログラミング未経験1人<br>
+                                                ・SIerの人2人<br>
+                                                <b>レビュー/PR</b>
+                                                レビュワーはAさんがBさん、BさんがCさんと言ったふうに担当してプルリクを投げる。OKをもらったらマージ。<br>
+                                                <b>実装について</b>
+                                                学習コミュニティの教材を応用したものではあるものの<br>
+                                                Reactの実装、認証機能やデータベースの接続、Githubの操作、GithubFlow、デプロイ、教材の解説には載っていない部分もあり、全部はじめてで苦労した。<br>
+                                                <b>チーム開発について</b>
+                                                １つの製品を複数人で同時に着手するのもほぼはじめてでやりとりが難しかった。SIre2人は業務で慣れているところがらしく理解に差があり大変だった。<br>
+                                                <br>
+                                                難しく大変だったぶん知らないことばかりだったので勉強になりました。
                                             </dd>
                                         </dl>
                                     </div><!-- /.work-detail__txt -->
@@ -300,7 +400,7 @@
                                             </dd>
                                             <dt>概要</dt>
                                             <dd>
-                                                macとwindows間で社内サーバーのパスを共有する際に発生する差異(/と\など)を相互変換するツールです。<br>社内に共有しフィードバックを受け修正する経験をしました。
+                                                macとwindows間で社内サーバーのパスを共有する際に発生する差異(/と\など)を相互変換するツール
                                             </dd>
                                             <dt>技術スタック</dt>
                                             <dd>
@@ -312,7 +412,7 @@
                                             </dd>
                                             <dt>感想</dt>
                                             <dd>
-                                                <!--テキストテキストテキストテキストテキスト-->
+                                                社内に共有しフィードバックを受け修正する経験をしました。
                                             </dd>
                                         </dl>
                                     </div><!-- /.work-detail__txt -->
@@ -340,7 +440,8 @@
                                             </dd>
                                             <dt>感想</dt>
                                             <dd>
-                                                <!--テキストテキストテキストテキストテキスト-->
+                                                ディレクターさんがサーバーのコンパネ情報だけ渡してきたりして、普段なかなか対応しない作業環境まで自分でき新鮮でした。（SSH設定やWPインストールなど）<br>
+                                                CSSでのアニメーション（自動横スクロール）をはじめて実装したページで、CSS進化してるなと思いました。
                                             </dd>
                                         </dl>
                                     </div><!-- /.work-detail__txt -->
@@ -368,7 +469,7 @@
                                             </dd>
                                             <dt>感想</dt>
                                             <dd>
-                                                <!--テキストテキストテキストテキストテキスト-->
+                                                ボリュームは色々ですが量が多いため、効率よくできるようにdevtoolに補助ツール的なスニペットを作ったり、Pythonで自動化できないか試したりしました。
                                             </dd>
                                         </dl>
                                     </div><!-- /.work-detail__txt -->
@@ -413,25 +514,32 @@
                             <div class="period__no"><span class="year">2015<br>〜<br>2017</span></div>
                             <div class="period__year"><span class="no">2</span>年</div>
                             <h3 class="period__ttl">webデザイナー</h3>
-                            <p class="period__detail">自社CMSの販売/運用サポート事業部
-                            <br>┣webデザイン・webディレクション・コーディング
-                            <br>┣印刷物制作
-                            <br>┗カスタマーサポート
+                            <p class="period__detail">
+                            <b>自社CMSの販売事業部でweb制作業務をトータルに担当</b>
+                            <br>├webデザイン・ディレクション・コーディング
+                            <br>├印刷物制作
+                            <br>└CMSカスタマーサポート
                             </p>
                         </div>
                         <div class="period">
                             <div class="period__no"><span class="year">2017<br>〜<br>2025</span></div>
                             <div class="period__year"><span class="no">6</span>年</div>
-                            <h3 class="period__ttl">コーダー</h3>
-                            <p class="period__detail">中小企業EC運用/サイト制作（HTML/CSS/JavaScript）
-                            <br>┣小~中ボリュームのLP30本/月
-                            <br>┣カート系ASPカスタマイズ
-                            <br>┗WordPress新規サイト制作・運用
+                            <h3 class="period__ttl">webサイト運用（コーダー）</h3>
+                            <p class="period__detail">
+                            <b>web制作会社でECサイト運用チームの専属コーダーを担当</b>
+                            <!--中小企業EC運用/サイト制作（HTML/CSS/JavaScript）-->
+                            <br>メイン1サイト＋スポット案件
+                            <br>├小~中ボリュームのLPを月30ページ
+                            <br>├カート系ASPカスタマイズ
+                            <br>└WordPress新規サイト制作・運用
                             </p>
                             <div class="period__year"><span class="no">2</span>年</div>
-                            <h3 class="period__ttl">マークアップエンジニア</h3>
-                            <p class="period__detail">大手企業サイト運用（広告代理店経由）
-                            <br>┗SASS/Gitを用いたチームでの運用・保守
+                            <h3 class="period__ttl">webサイト運用（マークアップエンジニア）</h3>
+                            <p class="period__detail">
+                            <b>クライアントの事業規模up＋SASSとGit＋複数案件担当</b>
+                            <br>複数案件の運用
+                            <br>├大手企業サイト(広告代理店経由)
+                            <br>└SASSとGitあり
                             </p>
                         </div>
                     </div>
@@ -462,7 +570,7 @@
             </span>
         </div><!-- /.contact -->
         <p class="copyright">
-            Copyright© RISA MASUDA All Rights Reserved.
+            Copyright© RM All Rights Reserved.
         </p><!-- /.copyright -->
     </footer>
 
@@ -486,6 +594,7 @@
             }
         });
     });
+
     window.addEventListener('load', function popup() {
         const area = document.querySelector('#introduction');
         const area_tp = area.offsetTop; //introductionの左上

@@ -33,6 +33,11 @@
   font-size: 1.8em;
   padding: 0 0 1em;
 }
+.c-indent {
+  display: block;
+  padding-left: 1em;
+  text-indent: -1em;
+}
 
 /*------------------------------------
 ------------------------------------*/
@@ -51,6 +56,11 @@ header {
   @media screen and (max-width: 800px) {
     top: 6vh;
     width: 72vw;
+  }
+
+  &.is-move {
+    top: 0;
+    color: #000;
   }
 
   h1#logo {
@@ -147,9 +157,15 @@ header.head_move {
   height: 87vh;
   margin: 6vh 6vh 0;
   overflow: hidden;
+  transition: all 1s ease;
 
   @media screen and (max-width: 800px) {
     margin: 4vh 4vh 0;
+  }
+
+  &.is-hide {
+    height: 0;
+    margin: 0;
   }
 }
 
@@ -164,7 +180,7 @@ footer {
 ------------------------------------*/
 .tab {
   width: 100%;
-  padding: 5em 0 0;
+  padding: 12em 0 0;
 
   @media screen and (max-width: 800px) {
     padding: 3em 0 0;
@@ -220,6 +236,71 @@ footer {
   padding: 4em 1em 6em;
   text-align: center;
   min-height: 30em;
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 2%;
+  }
+  &__box {
+    width: 49%;
+    border-radius: var(--radius);
+    border: solid 1px #888;
+    padding: 20px 20px 30px;
+    @media screen and (max-width: 800px) {
+      width:  100%;
+    }
+    &.-wide {
+      width: 100%;
+    }
+    &-ttl {
+      font-size: 1.8em;
+      padding: 0 0 1em;
+    }
+    &-head {
+      font-size: 1.2em;
+      padding: .8em 1em;
+      width: 110px;
+      flex-shrink: 0;//flexの幅をwidthのサイズで絶対固定する
+      h4 {
+      }
+      p {
+        color: #f79e03;
+        margin-top: 5px;
+        &.-blue {
+          color: var(--c-deep);
+          //color: #328cda;
+          span {
+            display: block;
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+    &-item {
+      display: flex;
+      text-align: left;
+      border-left: solid 4px var(--c-main);
+      &+.content__box-item {
+        margin-top: 10px;
+      }
+    }
+    &-detail {
+      /*
+      * flex-grow: 1; （残りのスペースをすべて使う）
+      * flex-shrink: 1; （必要なら縮む）
+      * flex-basis: 0; （初期サイズを無視）
+      */
+      flex: 1;
+      padding: .8em 1.5em .8em 0;
+      a {
+        color: var(--c-main);
+        text-decoration: underline;
+      }
+      .c-indent a {
+        display: inline;
+      }
+    }
+  }
 }
 
 .contents {
@@ -426,7 +507,7 @@ footer {
       //background-color: #eee;
       overflow: hidden;
       border-radius: var(--radius);
-      border: solid 1px #ccc;
+      border: solid 1px #888;
       text-align: center;
       img {
         width: auto;
@@ -488,6 +569,11 @@ footer {
           opacity: 0.3;
         }
       }
+      &+.work-items__item {
+        @media screen and (min-width: 800px) {
+          margin-top: 1em;
+        }
+      }
     }
     &__detail {
       border-radius: 8px;
@@ -503,7 +589,7 @@ footer {
     &__img {
       transition-duration: 0.4s;
       //opacity: 0.9;
-      opacity: 0.7;
+      opacity: 0.8;
       //height: 100%;
       //width: auto;
       width: 100%;
@@ -662,7 +748,7 @@ footer {
         }
 
         &__ttl {
-          font-size: 1.8em;
+          font-size: 1.4em;
           padding: 0 0 0.1em;
         }
 
@@ -670,6 +756,11 @@ footer {
           font-size: 1.2em;
           &+.period__year {
             margin-top: 1.5em;
+          }
+          b {
+              color: var(--c-deep);
+              margin-bottom: 2px;
+              display: inline-block;
           }
         }
 
@@ -729,6 +820,8 @@ footer {
 
       a {
         letter-spacing: 3px;
+        text-decoration: line-through;
+        pointer-events: none;
       }
     }
   }
